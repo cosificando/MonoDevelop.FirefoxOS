@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MonoDevelop.MozillaOS\MonoDevelop.MozillaOs.addin.xml">
+    <Files>
+      <File FileName="MonoDevelop.MozillaOS\MyClass.cs" Line="13" Column="1" />
+      <File FileName="MonoDevelop.MozillaOS\MonoDevelop.MozillaOs.addin.xml" Line="6" Column="40" />
+      <File FileName="MonoDevelop.MozillaOS\Templates\FirefoxEmptyProject.xpt.xml" Line="1" Column="1" />
+      <File FileName="MonoDevelop.MozillaOS\Templates\EmptyJavaScriptFile.xft.xml" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
