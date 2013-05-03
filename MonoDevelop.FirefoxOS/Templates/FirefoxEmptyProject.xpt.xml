@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Template originator   = "Pablo Escribano"
+          created      = "2010/02/18"
+          lastModified = "2010/02/18">
+	
+	<!-- Template Header -->
+	<TemplateConfiguration>
+		<_Name>Firefox Empty Project</_Name>
+		<_Category>JavaScript/FirefoxOS</_Category>
+		<Icon>md-project-gui</Icon>
+		<LanguageName>JavaScript</LanguageName>
+		<_Description>A JavaScript project for Firefox OS</_Description>
+	</TemplateConfiguration>
+	
+	<!-- Actions -->
+	<Actions>
+		<Open filename = "Main.cs"/>
+	</Actions>
+	
+	<!-- Template Content -->
+	<Combine name = "${ProjectName}" directory = ".">
+		<Options>
+			<StartupProject>${ProjectName}</StartupProject>
+		</Options>
+		
+		<Project name = "${ProjectName}" directory = "." type = "JavaScript">
+			
+	
+		
+			<Files>
+			
+
+				
+					<File name="MainWindow.cs" AddStandardHeader="True">
+<![CDATA[using System;
+using Gtk;
+
+namespace ${Namespace}
+{
+	
+	public partial class MainWindow: Gtk.Window
+	{	
+		public MainWindow (): base (Gtk.WindowType.Toplevel)
+		{
+			Build ();
+			
+			//your custom initialization code goes here
+		}
+		
+		protected void OnDeleteEvent (object sender, DeleteEventArgs a)
+		{
+			Application.Quit ();
+			a.RetVal = true;
+		}
+	}
+}]]>
+					</File>
+				</Widget>
+				
+				<!-- The main class -->
+				
+				<File name="Main.cs" AddStandardHeader="True">
+<![CDATA[using System;
+using Gtk;
+
+namespace ${Namespace}
+{
+	class MainClass
+	{
+		public static void Main (string[] args)
+		{
+			Application.Init ();
+			MainWindow win = new MainWindow ();
+			win.Show ();
+			Application.Run ();
+		}
+	}
+}]]>
+				</File>
+				
+				<FileTemplateReference TemplateID="CSharpAssemblyInfo" name="AssemblyInfo.cs" />
+			</Files>
+		</Project>
+	</Combine>
+</Template>
+
