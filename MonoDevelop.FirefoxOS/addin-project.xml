@@ -1,0 +1,12 @@
+<AddinProject appVersion="2.4">
+	<Project platforms="Mac Linux">
+		<AddinFile>MonoDevelop.FirefoxOS/bin/Debug/MonoDevelop.FirefoxOS.dll</AddinFile>
+		<BuildFile>MonoDevelop.FirefoxOS.sln</BuildFile>
+		<BuildConfiguration>Debug</BuildConfiguration>
+	</Project>
+	<Project platforms="Win32">
+		<AddinFile>MonoDevelop.FirefoxOS/bin/DebugWin32/MonoDevelop.FirefoxOS.dll</AddinFile>
+		<BuildFile>MonoDevelop.FirefoxOS.sln</BuildFile>
+		<BuildConfiguration>DebugWin32</BuildConfiguration>
+	</Project>
+</AddinProject>
